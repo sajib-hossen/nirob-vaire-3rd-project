@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url('image/ban02.jpg'), linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.1));
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    background-color: rgba(0,0,0,.2);
+}
+nav .logo{
+    width: 20%;
+    text-align: center;
+}
+.logo h1{
+    font-size: 50px;
+    color: rgba(80, 214, 255, 0.44);
+    font-weight: 500;
+    
+}
+nav .menu{
+    width: 50%;
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+.menu a{
+    text-decoration: none;
+    width: 25%;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+
+    
+    
+}
+.menu a:hover{
+    background: rgba(80, 214, 255, 0.44);
+    border-radius: 10px;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 5px 9px 5px black;
+}
+section h1{
+    margin: 50px 0 30px 0;
+    font-size: 50px;
+    font-weight: 400;
+    text-shadow: 5px 9px 5px black;
+}
+section p{
+ font-size: 25px;
+ white-space: 5px;
+ letter-spacing: 3px;
+ margin-bottom: 15px;
+ color: black;
+ text-shadow: 10px 5px 6px black;
+}
+section a{
+    text-decoration: none;
+
+}
+section .btnone{
+    background: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: larger;
+}
+section .btntwo{
+    background: #40739e;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: larger;
+}
+.btnone:hover{
+    background-color: #40739e;
+    color: white;
+}
+.btntwo:hover{
+    background-color: white;
+}
+.content_change:after{
+    content: "";
+    animation: changetext 5s infinite linear;
+    color: #05c46b;
+
+}
+@keyframes changetext{
+    0%{ content: "Dhaka";}
+    20%{ content: "Netrokona";}
+    30%{ content: "Comilla";}
+    50%{ content: "Chittagong";}
+    65%{ content: "Rajshahi"; }
+    75%{ content: "Srimangal";}
+    85%{ content: "Rangamati";}
+    100%{ content: "Sylhet";}
+    
+}
